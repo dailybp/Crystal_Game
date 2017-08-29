@@ -1,0 +1,24 @@
+*{
+  border: 1px solid black;
+}
+
+pre{
+  word-wrap: break-word;
+  text-align: justify;
+  margin: 20px 20px 20px 20px;
+}
+
+button{
+  display: inline;
+}
+
+.col-md-3{
+  height: 40px;
+  width: 40px;
+}
+
+.crystal-image{
+  height:200px;
+  width:200px;
+  border-radius: 2em;
+}

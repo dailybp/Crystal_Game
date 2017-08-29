@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <title>Crystal Game</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Crystal Game -- v.1</h1>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <pre>You will be given a random number at the start of the game.
+
+There are four crystals below. By clicking on a crystal you will add specific
+amount of points to your total score.
+
+You win the game by matching your total score to the random number,
+you lose the game if your total score goes above the random number.
+
+The value of each crystal is hidden from you until you click on it.
+Each time when the game starts, the game will change the values of each crystal.
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8" id="random-num"><h1>0</h1></div>
+        <div class="col-sm-4" id="scores"><p>Wins: </p><p>Losses: </p></div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="crystal"></div>
+      </div>
+    </div>
+    <div class="total-score"><p>Your total score is: </p></div>
+    <div class="crystal-number" id="crystal-sum"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
