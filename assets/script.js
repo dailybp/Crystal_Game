@@ -32,6 +32,10 @@ $(document).ready(function(){
     $("#crystal").append(crystalImage);
   }
 
+  function initializeGame(){
+    $("#crystal-sum, #numberArray").empty();
+  }
+
   $(".crystal-image").on('click', function(){
       var crystalValue=($(this).attr("data-crystalValue"));
       crystalSum += parseInt(crystalValue);
@@ -39,12 +43,15 @@ $(document).ready(function(){
 
       if(crystalSum === random){
         console.log("win");
-        win++;
+        wins++;
+        $("#wins").html("<h2> Wins: " + wins + "</h2>");
       }
       else if(crystalSum >= random){
         console.log("lose");
         losses++;
+        $("#losses").html("<h2>Losses: " + losses + "</h2>");
       }
-      $("#crystal-sum").append(crystalSum);
+      $('#crystal-sum').html("<h2>" + crystalSum + "</h2>");
+      //reset();
   });
 });
