@@ -16,6 +16,8 @@ $(document).ready(function(){
     console.log(numberArray);
   }
 
+  $("#random-num").html("<h1>" + random + "</h1>");
+
   for(var i = 0; i < crystals.length; i++){
     var crystalImage = $("<img>");
     //console.log("first step");
